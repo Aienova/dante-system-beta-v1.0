@@ -1,0 +1,103 @@
+
+
+
+        <section id="dante" class="arrive full">
+
+          
+
+        <nav >
+
+
+        <h1 id="title"></h1>
+        <div id="navigator" class="flexible">
+        
+        
+        <a id="backtohome" href="/"><div class="navigate"> <img class="pictos" src=" {{ asset('build/media/icons/home.png') }}"/>Revenir à l'accueil</div></a>
+
+
+         <a id="addtofeature" class="adding restricted-editor"><div class="navigate "> <img class="pictos " src=" {{ asset('build/media/icons/add.png') }}"/>Ajouter <span class="featurespan2"></span></div></a>
+
+        <a id="searchdate" class="hidden"><div class="navigate"> <form method='POST' id="searcher" data-action='agenda' action=''><label>Recherché à partir d'une date</label><input type='date' name='searchdate' value="" /><input type='submit' value='rechercher' /></form></div></a>
+
+        </div>
+
+        <div id="feature">
+
+        </div>
+         
+             </nav>
+
+
+
+
+
+        <script>
+
+
+        var feature = window.location.pathname.replace(/\//g,'');
+
+
+        
+
+            var title=feature;
+            var nominal="un ";
+
+        if(feature=="quotation"){  var title="Demande de Devis"; var nominal="une ";  }
+         if(feature=="formation"){  var title="Demande de Formation"; var nominal="une ";   }
+         if(feature=="partner"){  var title="Partenaire / Fournisseur"; }
+          if(feature=="customer"){  var title="Entreprise"; }
+          if(feature=="institute"){  var title="Organisme de formation"; }
+          if(feature=="personal"){  var title="Salarié"; }
+          if(feature=="consulting"){  var title="Intérimaire"; }
+           if(feature=="permission"){  var title="Demande de Congé"; var nominal="une ";   }
+           if(feature=="calendar"){  var title="Calendrier"; }
+           if(feature=="recruit"){  var title="Recrutement"; }
+            if(feature=="user"){  var title="Utilisateur"; }
+            if(feature=="about"){  var title="A propos"; }
+            if(feature=="documents"){  var title="Consulter vos dossiers"; }
+            if(feature=="configuration"){  var title="Configuration"; }
+            if(feature=="stat"){  var title="Statistique"; }
+            if(feature=="certificate"){  var title="Intitulé de formation"; }
+                        if(feature=="absence"){  var title="Absence"; var nominal="une ";   }
+        
+        
+        
+        
+        
+
+        
+
+        $("#title").html(title);
+        $(".featurespan").html(title);
+         $(".featurespan2").html(nominal+title);
+
+           $.ajax({
+            url: './functions/'+feature+'.php',
+            type: 'post',
+
+            success: function(data) {
+
+      
+                $('#feature').html(data);
+
+                $('#backtohome').attr("href","/".feature);
+
+
+               },
+               error: function() {
+                $('#feature').text('Erreur au niveau des fonctions');
+               }
+
+
+        });
+
+
+
+
+        </script>
+
+
+    </section>
+
+
+

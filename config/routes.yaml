@@ -1,0 +1,183 @@
+controllers:
+    resource: ../src/Controller/
+    type: annotation
+
+kernel:
+    resource: ../src/Kernel.php
+    type: annotation
+
+
+index:
+    path: /bonjour
+    controller: App\Controller\BonjourController::bonjour
+
+home:
+    path: /
+    controller: App\Controller\HomeController::home
+
+
+homecome:
+        path: /homecome
+        controller: App\Controller\HomecomeController::homecome
+
+quotation:
+        path: /quotation
+        controller: App\Controller\QuotationController::quotation
+
+customer:
+        path: /customer
+        controller: App\Controller\CustomerController::customer
+
+
+partner:
+        path: /partner
+        controller: App\Controller\PartnerController::partner
+
+
+personal:
+        path: /personal
+        controller: App\Controller\PersonalController::personal
+
+recruit:
+        path: /recruit
+        controller: App\Controller\RecruitController::recruit
+
+user:
+        path: /user
+        controller: App\Controller\UserController::user
+
+
+calendar:
+        path: /calendar
+        controller: App\Controller\CalendarController::calendar
+
+
+agenda:
+        path: /agenda
+        controller: App\Controller\AgendaController::agenda  
+
+
+formation:
+        path: /formation
+        controller: App\Controller\FormationController::formation
+
+
+permission:
+        path: /permission
+        controller: App\Controller\PermissionController::permission
+
+
+connection:
+        path: /connection
+        controller: App\Controller\ConnectionController::connection
+
+
+documents:
+        path: /documents
+        controller: App\Controller\DocumentsController::documents
+
+
+consulting:
+        path: /consulting
+        controller: App\Controller\ConsultingController::consulting
+
+
+institute:
+        path: /institute
+        controller: App\Controller\InstituteController::institute
+
+
+
+configuration:
+        path: /configuration
+        controller: App\Controller\ConfigurationController::configuration
+
+
+about:
+        path: /about
+        controller: App\Controller\AboutController::about
+
+
+stat:
+        path: /stat
+        controller: App\Controller\StatController::stat
+
+
+
+certificate:
+        path: /certificate
+        controller: App\Controller\CertificateController::certificate
+
+absence:
+        path: /absence
+        controller: App\Controller\AbsenceController::absence
+
+services:
+        path: /services
+        controller: App\Controller\ServicesController::services
+
+hr:
+        path: /hr
+        controller: App\Controller\HrController::hr
+
+billing:
+        path: /billing
+        controller: App\Controller\BillingController::billing
+
+
+delivery:
+        path: /delivery
+        controller: App\Controller\DeliveryController::delivery
+
+
+bill:
+        path: /bill
+        controller: App\Controller\BillController::bill
+
+
+deposit:
+        path: /deposit
+        controller: App\Controller\DepositController::deposit
+
+
+hire:
+        path: /hire
+        controller: App\Controller\HireController::hire
+
+
+maintask:
+        path: /maintask
+        controller: App\Controller\MaintaskController::maintask
+
+task:
+        path: /task
+        controller: App\Controller\TaskController::task
+
+
+job_offer:
+        path: /job_offer
+        controller: App\Controller\JobofferController::joboffer
+
+
+job:
+        path: /job
+        controller: App\Controller\JobController::job
+
+specifications:
+        path: /specifications
+        controller: App\Controller\SpecificationsController::specifications
+
+test:
+        path: /test
+        controller: App\Controller\TestController::test
+
+problems:
+        path: /problems
+        controller: App\Controller\ProblemsController::problems
+
+
+
+parameters:
+        path: /parameters
+        controller: App\Controller\ParametersController::parameters
+

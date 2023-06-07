@@ -1,0 +1,125 @@
+
+
+table {
+    width: 96%;
+    margin: auto;
+}
+
+th {
+    font-size: 25px;
+    padding: 10px;
+    text-align: left;
+}
+
+a#printfeature {
+    float: right;
+}
+
+td {
+    width: 0%;
+    padding-top: 10px;
+    /* text-align: center; */
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-bottom: 10px;
+    /* border: solid #ff9696 2px; */
+}
+
+td.work {
+    background-color: #e5e5e5;
+}
+
+td.weekend {
+    background-color: #434141!important;
+}
+
+td.holiday {
+    background-color: #f1e85f!important;
+}
+
+td.permission {
+    background-color: #1ac46f;
+}
+
+td.permissions {
+    background-color: #1ac46f;
+}
+
+
+td.absence {
+    background-color: red;
+}
+
+
+td.absences {
+    background-color: red;
+}
+
+
+td.presence {
+    background-color: #51a4fe;
+    color: black;
+}
+
+
+td.permissionwait {
+    background-color: #fea400!important;
+    color: black;
+  border: solid 1px;
+}
+
+td.presences {
+    background-color: #51a4fe;
+    color: black;
+}
+
+td.family {
+    background-color: rgb(119, 0, 255);
+}
+
+
+.calendarsearch label{
+    color:white;
+}
+
+.calendarsearch {
+    background-color: black;
+    height: fit-content;
+    width: fit-content;
+    padding: 16.5px;
+    margin-left: 10px;
+}
+
+legend {
+    padding: 5px;
+    background-color: black;
+    color: white;
+    width: fit-content;
+    margin-bottom: 15px;
+}
+
+#columns{
+
+    background-color: #ff5959;
+}
+td.value {
+    background-color: #3d3434;
+}
+
+
+#action {
+    background-color: white!important;
+    color: black!important;
+}
+
+div#pagescroll {
+    text-align: right;
+    margin-top: 20px;
+}
+
+div#thetable {
+    height: 400px;
+    overflow-y: scroll;
+    margin-top: 20px;
+}

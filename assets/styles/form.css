@@ -1,0 +1,212 @@
+
+   /* CHECKBOXES */
+   
+   .multiselect {
+    width: 352px;
+}
+      
+      .selectBox {
+        position: relative;
+      }
+      
+      .selectBox select {
+        width: 100%;
+        font-weight: bold;
+      }
+      
+      .overSelect {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+      }
+
+      #personal > #checkboxes {
+
+        position: absolute;
+
+      }
+      
+
+      #addform input[type="checkbox"] {
+        height: 15px!important;
+        width: 30px!important;
+    }
+
+
+    #checkboxes {
+      display: none;
+      border: 1px #dadada solid;
+      background-color: white;
+      height: 150px;
+      overflow-y: scroll;
+      transform: translateY(-30px);
+      width: 350px;
+      margin-top: 30px;
+  }
+  
+
+      
+    #checkboxes label {
+      display: flex;
+      border-bottom: 1px solid black;
+  }
+
+  span.cancel {
+    background-color: #e53b3b!important;
+}
+
+#backtohome{
+  text-decoration: none;
+}
+
+
+#backtohome div{
+  background-color: #e53b3b!important;
+}
+
+span.cancel:hover {
+  background-color: #ffffff!important;
+  color:black!important;
+}
+      .formpart {
+
+        overflow-y: scroll;
+        height: 450px;
+        padding-right: 20px;
+        padding: 10px;
+        background-color: #2b74a8;
+        box-shadow: aqua;
+    }
+
+    #addtofeature div {
+      background-color: #bcff00!important;
+      color: black;
+  }
+
+  
+
+    .formpart textarea {
+      width: 350px;
+      margin-top: 12px;
+      min-height: 80px;
+      max-height: 160px;
+      max-width: 350px;
+      min-width: 350px;
+  }
+
+      #checkboxes label:hover {
+        background-color: #1e90ff;
+      }
+
+      label {
+        margin-right: 15px;
+    }
+    
+    select , input {
+        background-color: #000000b5!important;
+        color: white;
+        width: 200px;
+        padding: 7px;
+        border-color: white;
+    }
+
+    span#currentpage {
+      display: none;
+  }
+
+    input[type="submit"] {
+      background-color: white!important;
+      color: black;
+      margin-top: 10px;
+      cursor:pointer;
+  }
+
+  div#buttons span {
+    width: 100px;
+    padding: 5px;
+    background-color: black;
+    color: white;
+    margin-right: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    cursor:pointer;
+}
+
+.radiothis{
+
+  display: none;
+}
+
+#searchdate input {
+  margin-top: 0px;
+  margin-right: 10px;
+  width: 100px;
+}
+    
+div#buttons span:hover {
+
+
+  background-color: #1e90ff;
+  color:white;
+
+
+
+}
+
+input[type='radio'] {
+  width: 15px;
+  /* transform: translateY(3px); */
+}
+
+#connection input[type="submit"] {
+  background-color: #ff5959!important;
+  /* color: white; */
+}
+
+
+div#searchbar {
+  text-align: right;
+}
+
+.formpart p {
+  margin-bottom: 5px;
+}
+
+.formpart label {
+  /* padding-top: 4px; */
+  display: inline-block;
+  transform: translateY(3px);
+  font-weight: bolder;
+}
+
+
+p#address {
+  margin-bottom: 0px;
+}
+
+
+.formpart input {
+  margin-right: 15px;
+}
+
+
+.edittable {
+  width: 50%!important;
+  margin: auto!important;
+}
+
+
+.value input {
+  width: 111px;
+}
+
+input[type="date"] {
+  background-color: #4b4747!important;
+  
+}
+
+
+
+      /*--- CHECKBOXES --*/

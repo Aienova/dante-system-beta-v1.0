@@ -1,0 +1,515 @@
+@import "shortcode.css";
+@import "animation.css";
+@import "table.css";
+@import "form.css";
+@import "calendar.css";
+@import "loader.css";
+
+
+*{
+
+    font-family: 'Trebuchet MS';
+}
+
+body {
+    background-color: lightgray;
+    background-image: url(../media/images/background.jpg);
+    
+    
+}
+
+html,body{
+
+    height:90%;
+    width:100%;
+    margin:0px;
+
+}
+
+
+h1 {
+    color: black;
+    font-size: 30px;
+}
+
+
+#fonctionnal {
+    width: 100%;
+    height: 90%;
+}
+
+main {
+    height: 90%;
+    
+}
+
+header{
+
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    z-index:11111111;
+    width: 250px;
+}
+
+menu#sub-menu ul {
+    width: 200px;
+}
+
+header h1{
+
+    text-align: center;
+}
+
+#main-menu {
+    width: 200px;
+    height: 2000px;
+    margin: 0px;
+    padding: 0px;
+    color: #ff5959;
+    background-color: #ffffff;
+    display: none;
+}
+
+
+#main-menu li {
+    list-style: none;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    cursor:pointer;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+#panel {
+    width: 96%;
+    margin: auto;
+    height: 100%;
+}
+
+div#calendar {
+    overflow: scroll;
+}
+
+
+.filtering {
+    cursor: pointer;
+}
+
+
+
+
+.user-icon {
+    height: 50px;
+    filter: invert(1);
+    margin-right: 20px;
+}
+
+
+#card {
+    width: auto;
+    height: fit-content;
+    color: white;
+    padding: 25px;
+    /* display: none; */
+    position: fixed;
+    display: inline-block;
+    top: 0px;
+    right: 0px;
+    opacity: 1;
+    transition-duration: 1s;
+    text-align: right;
+    background-color: #000000;
+    z-index: 0;
+    transform: scale(0.777) translateX(15px);
+    /* transform: translateX(10px); */
+}
+
+
+
+section#concil {
+    text-align: center;
+}
+
+#explorer li:hover {
+    background-color: white;
+    filter: invert(1);
+}
+
+
+
+#main-menu li:hover{
+
+    background-color:  #e53c3cc9;
+    color:white;
+}
+
+#sub-menu li {
+
+    padding: 10px;
+    list-style: none;
+}
+
+#sub-menu ul {
+    padding-left: 0px!important;
+}
+
+#sub-menu li:hover{
+
+
+    background-color: #000000;
+    color:white;
+}
+
+span.notice {
+    color: #ddff00;
+    /* margin-top: 5px; */
+}
+
+
+
+menu#sub-menu {
+    height: 460px;
+    background-color:  #e53c3cc9;
+    /* top: 16px; */
+    margin-top: 95px;
+    width: 200px; 
+}
+
+
+
+div#feature {
+    background-color: #e53c3cc9;
+    padding: 30px;
+    height: 100%;
+}
+
+
+nav {
+    padding-top: 0%;
+}
+
+section {
+    height: 90%;
+
+}
+
+.add-new-consulting {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    width: fit-content;
+    margin-top:50px;
+}
+
+.choice {
+    width: fit-content;
+    margin: auto;
+    text-align: center;
+}
+
+
+footer {
+    height: 70px;
+    /* background-color: black; */
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    text-align: center;
+    color: black;
+    z-index: -1111111;
+}
+
+
+#selector {
+    border-top: solid 2px black;
+    width: 100%;
+    height: 300px;
+    border-left: solid 2px black;
+    overflow-y: scroll;
+}
+
+#chat {
+    width: 100%;
+}
+
+form {
+    width: 100%;
+}
+
+
+#chat textarea {
+
+    width: 100%;
+
+}
+
+.demand {
+    text-align: left;
+    margin-left: 20px;
+    padding: 10px;
+    border-bottom: solid 1px black;
+    width: 90%;
+    max-height: 117px;
+    overflow-y: hidden;
+    cursor:pointer;
+}
+
+
+nav#connection {
+    text-align: center;
+    padding-top: 15%;
+
+}
+
+.stat {
+    width: 77px;
+    height: 77px;
+    text-align: center;
+    border: solid;
+    padding: 41px;
+    border-radius: 100px;
+    margin: auto;
+}
+span.numbers {
+    font-size: 35px;
+}
+#backtofeature {
+    text-align: right;
+    float: right;
+}
+
+
+
+#backtofeature > .navigate {
+    width: fit-content;
+    /* text-align: right; */
+}
+
+
+#informations li {
+    height: 20px;
+    overflow-y: hidden;
+}
+
+div#shutdown img {
+    height: 50px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+div#filespace {
+    width: 100%;
+}
+
+.actionbutton {
+    background-color: #000000;
+    padding: 10px;
+    margin-right: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+.actionbutton:hover{
+
+    filter: invert(1);
+}
+
+div#explorer {
+
+    margin-bottom: 50px;
+   
+}
+
+
+.actions-directory img {
+    margin-right: 55px;
+    border: solid 2px;
+    padding: 5px;
+    border-radius: 54px;
+    /* background-color: red; */
+}
+
+
+.actions-directory img:hover {
+ 
+    background-color: rgb(255, 174, 0);
+}
+
+
+#explorer form {
+    width: 360px;
+    text-align: center;
+    margin: 10px;
+}
+
+div#profiler {
+    width: fit-content;
+}
+
+li.routing {
+    cursor: pointer;
+}
+
+
+ul#navigator {
+    width: 100%;
+    height: 250px;
+    overflow-y: scroll;
+    background-color: #f5adad;
+}
+
+
+.explore {
+    list-style: none;
+    margin-top: 15px;
+    padding: 10px;
+    border-bottom:2px solid;
+
+}
+
+
+
+#checkboxes a {
+    text-decoration: none;
+    /* background-color: red; */
+    color: red;
+}
+
+
+span.filename {
+    margin-left: 10px;
+    /* margin-top: 20px; */
+    transform: translateY(-14px);
+    display: inline-block;
+    height: 17px;
+    overflow: hidden;
+}
+
+
+div#editform {
+    width: 100%;
+    overflow-y: scroll;
+    height: 150px;
+    padding: 10px;
+    background-color: #206da3;
+    border: solid 2px;
+}
+
+
+
+div#shutdown {
+    width: fit-content;
+    text-align: center;
+    /* margin: auto; */
+    margin-top: 110px;
+    color: black;
+    position: fixed;
+    bottom: 15px;
+    left: 15px;
+    background-color: #e53b3b;
+    padding: 10px;
+}
+
+
+#navigator a{
+
+    margin:10px!important;
+}
+
+.navigate:hover{
+
+    filter:invert(1);
+}
+
+.navigate {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    cursor:pointer;
+}
+
+.navigate img {
+    filter: invert(1);
+    margin-right: 10px;
+    transform: translateY(2px);
+}
+
+.actions{
+
+    background-color: white;
+}
+
+
+.actions-directory {
+    /* text-align: right; */
+    float: right;
+    margin-top: 5px;
+    width: fit-content;
+}
+
+span.featurespan {
+    text-transform: lowercase;
+}
+
+span.featurespan2 {
+    text-transform: lowercase;
+}
+
+
+
+.actions img:hover {
+
+    background-color: #ff2121;
+    border-radius: 25px;
+    filter: invert(1);
+}
+
+
+.demand:hover {
+    background-color: blue;
+    color: white;
+}
+
+
+
+#edit-validator,#edit-sender,#date_start_2,#date_end_2,#date_start_3,#date_end_3{
+
+    display:none;
+}
+
+
+
+#viewer {
+    background-color: white;
+    width: 100%;
+    height: 400px;
+}
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #ffffff #000000;
+  }
+
+
+
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 15px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #000000;
+  }
+
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 3px solid #dfdddd;
+  }
+

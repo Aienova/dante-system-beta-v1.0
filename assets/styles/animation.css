@@ -1,0 +1,60 @@
+
+
+.moove{
+
+    animation-duration: 0.5s;
+    animation-name: outsomething;
+    animation-fill-mode: forwards;
+
+
+
+}
+
+
+.arrive{
+
+    animation-duration: 0.5s;
+    animation-name: showsomething;
+    animation-fill-mode: forwards;
+
+
+
+}
+
+
+
+
+@keyframes showsomething {
+    from {
+        transform: scale(1.5) translate(-130px, -20px);
+        opacity: 0;
+
+    }
+    to {
+        transform: scale(1) translate(0px, 0px);
+        opacity: 1;
+
+    }
+  }
+
+  @keyframes outsomething {
+    from {
+
+        transform: scale(1) translate(0px, 0px);
+        opacity: 1;
+
+     
+
+    }
+
+
+
+
+    to {
+
+        transform: scale(1.5) translate(-200px, -20px);
+        opacity: 0;
+        
+
+    }
+  }

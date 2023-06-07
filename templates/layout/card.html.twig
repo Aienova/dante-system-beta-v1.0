@@ -1,0 +1,70 @@
+ <div id="card">
+ 
+ 
+ <div id="identity" class="flexible">
+  
+        </div>
+
+        <div id="intels">
+        
+     
+        </div>
+  
+  
+        <script>
+
+    
+           $.ajax({
+            url: './functions/infos.php',
+            type: 'post',
+
+            success: function(data) {
+
+      
+                $('#intels').html(data);
+
+     
+
+
+               },
+               error: function() {
+                $('#intels').text('Erreur au niveau de card');
+               }
+
+
+        });  
+
+
+            $.ajax({
+            url: './functions/identity.php',
+            type: 'post',
+
+            success: function(data) {
+
+      
+                $('#identity').html(data);
+
+     
+
+
+               },
+               error: function() {
+                $('#identity').text('Erreur au niveau de card');
+               }
+
+
+        });  
+
+
+
+
+
+        </script>
+
+  
+  </div>
+
+  
+          <div style="padding:10px;color:red;">Dante System version Bêta 1.0, cette application ne reflète pas le résultat finale</div>
+
+  

@@ -1,0 +1,205 @@
+
+<style>
+
+.unavaible {
+    color: grey!important;
+    cursor: not-allowed!important;
+    background-color: #ff000000!important;
+}
+
+</style>
+
+<header>
+
+<div id="myaccount"></div>
+<div id="langue"></div>
+
+<div class="flexible">
+<menu id="main-menu">
+<a href="/"><img class="logo" src=" {{ asset('build/media/images/logo.png') }}"/></a>
+
+<ul >
+<li id="commercial" onmouseover="hovering('commercial')" onmouseout="outhovering('commercial')">Formation</li>
+<li onmouseover="hovering('administration')"  onmouseout="outhovering('administration')" >Congé/Absence</li>
+<li class="routing" data-id="stat" >Statistique</li>
+<!--<li onmouseover="hovering('accounting')"  onmouseout="outhovering('accounting')" >Comptabilité</li>-->
+<li class="routing" data-id="documents"   >Médiathèque</li>
+<li onmouseover="hovering('parameter')"  onmouseout="outhovering('parameter')" >Paramètre</li>
+
+
+
+
+<!--
+<li data-id="paramter" class="routing">Extensions</li>  -->
+
+
+
+<!-- <li class="unavaible" data-id="account" >Mon compte</li> -->
+
+
+</ul>
+
+
+</menu>
+
+
+
+    <menu id="sub-menu"  class="close">
+
+            <ul id="sub-menu-commercial" class="close">
+
+        <!--<li data-id="quotation" class="unavaible">Devis</li> -->
+       <!-- <li data-id="partner" class="routing">Partenaires/Fournisseurs</li> -->
+               <li data-id="consulting" class="routing">Intérimaire</li>
+        <li data-id="customer" class="routing">Entreprise</li>
+        <li data-id="institute" class="routing">Organisme de formation</li>
+        <li data-id="certificate" class="routing" >Intitulé de formation</li>
+        <li data-id="formation" class="routing">Demande de formations</li>
+
+            </ul>
+
+                 <ul id="sub-menu-administration" class="close">
+
+        <li data-id="personal" class="routing">Salariés</li>
+        <li data-id="permission" class="routing">Demande de Congé</li>
+        <li data-id="absence" class="routing">Absence</li>
+        <li data-id="calendar" class="routing">Calendrier</li>
+
+        
+        <!-- <li data-id="recruit" class="unavaible">Recrutement</li> -->
+
+            </ul>
+
+                        <!--   <ul id="sub-menu-accounting" class="close">
+
+        <li class="unavaible" data-id="bill" >Bon de commande</li>
+        <li class="routing" data-id="stat" >Statistique</li>
+
+            </ul> -->
+
+          <ul id="sub-menu-parameter" class="close">
+        <li class="unavaible" data-id="configuration" >Configuration</li>
+        <li class="routing" data-id="user" >Gestion des utilisateurs</li>
+        <li class="unavaible" data-id="data-analyse restrict2">Gestion des données</li>
+        <a href="/Dante_System_manuel.pdf"><li>Manuel d'utilisation</li></a>
+        <li class="routing" data-id="about" >A propos</li>
+            </ul>
+
+
+
+    </menu>
+
+</div>
+
+</header>
+
+
+<div id="shutdown" data-id="shutdown" >Se déconnecter<br><img src=" {{ asset('build/media/icons/shutdown.png') }}"/></div>
+<div id="parameters" class='routing' data-id="parameters" >Paramètres<br><img src=" {{ asset('build/media/icons/loader2.png') }}"/></div>
+
+<script>
+
+
+    $.ajax({
+            url: './functions/connected.php',
+
+            success: function(data) {
+
+                $('#myaccount').html(data);
+               },
+               error: function() {
+                $('#myaccount').text('Erreur au niveau de la connexion');
+               }
+
+        });
+
+
+
+
+ 
+   function hovering(id) {
+
+
+        console.log( "animation : hover " );
+
+        $("#sub-menu ul").removeClass("open");
+         $("#sub-menu").removeClass("invisible");
+
+            console.log( "Open menu "+id );
+
+            $("#sub-menu-"+id).addClass("open");
+
+             $("#sub-menu").removeClass("close");
+
+            $("#sub-menu").attr('data-id', id);
+    
+    }
+
+
+    $('#sub-menu').hover(function() {
+
+         $("#sub-menu").removeClass("invisible");
+
+               var id= $("#sub-menu").attr('data-id');
+
+              
+
+        $("#sub-menu-"+id).addClass("open");
+
+        console.log( "Stay menu "+id );
+
+
+
+   } );
+
+       $('#parameter').hover(function() {
+
+
+
+        $("#sub-menu").addClass("close");
+
+        console.log( "Submenu close " );
+
+
+
+   } );
+
+          $('#account').hover(function() {
+
+
+            $("#sub-menu").addClass("close");
+
+        console.log( "Submenu close " );
+
+
+
+   } );
+
+
+   $('header').hover(function() {
+
+            $("#sub-menu").removeClass("invisible");
+         $("#sub-menu").addClass("close");
+
+   });
+
+
+     
+
+
+
+    
+
+       function outhovering(id) {
+
+        console.log( "animation : hover out " );
+
+            $("#sub-menu-"+id).removeClass("open");
+            $("#sub-menu").addClass("invisible");
+
+            console.log( "Close menu "+id );
+    }
+
+
+
+</script>
